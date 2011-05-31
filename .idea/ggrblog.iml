@@ -83,6 +83,12 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.10, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/arel-2.0.10)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180@global/gems/thor-0.14.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] autotest (v4.4.6, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/autotest-4.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ZenTest (v4.5.0, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] autotest-rails-pure (v4.1.2, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/autotest-rails-pure-4.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sys-uname (v0.8.5, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/sys-uname-0.8.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] autotest-fsevent (v0.2.5, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/autotest-fsevent-0.2.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] autotest-growl (v0.2.9, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/autotest-growl-0.2.9)" level="application" />
   </component>
 </module>
 
