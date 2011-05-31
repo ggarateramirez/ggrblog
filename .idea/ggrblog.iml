@@ -90,6 +90,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/diff-lcs-1.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180@global/gems/thor-0.14.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.2, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.9, /Users/gonzalogarate/.rvm/gems/ruby-1.9.2-p180/gems/arel-2.0.9)" level="application" />
   </component>
 </module>
 
