@@ -51,8 +51,6 @@ describe "LayoutLinks" do
                                          :content => "Sign out")
     end
 
-    it "should have a profile link"
-
     it "should have a profile link" do
       visit root_path
       response.should have_selector("a", :href => user_path(@user),
