@@ -6,7 +6,7 @@ Ggrblog::Application.routes.draw do
 
   get "sessions/new"
 
-  resources :users
+
   resources :users do
     member do
       get :following, :followers
