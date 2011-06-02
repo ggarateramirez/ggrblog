@@ -9,14 +9,14 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
+    @title = "Contacto"
   end
 
   def about
-    @title = "About"
+    @title = "Nosotros"
   end
 
   def help
-    @title = "Help"
+    @title = "Ayuda"
   end
 end

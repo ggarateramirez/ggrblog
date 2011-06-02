@@ -183,3 +183,7 @@ es:
 
       full_messages:
         format: "%{attribute} %{message}"
+
+
+  previous: 'Anterior'
+  next: 'Siguiente'

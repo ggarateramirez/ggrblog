@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_filter :admin_user, :only => :destroy
 
   def index
-    @title = "All users"
+    @title = "Todos los Usuarios"
     @users = User.paginate(:page => params[:page])
   end
 
@@ -17,51 +17,52 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @title = "Sign up"
+    @title = "Registro"
   end
 
   def create
     @user = User.new(params[:user])
     if @user.save
+      UserMailer.registration_confirmation(@user).deliver
       sign_in @user
-      flash[:success] = "Welcome to the GgrBlog App!"
+      flash[:success] = "Bienvenido a la GgrAplication!"
       redirect_to @user
     else
-      @title = "Sign up"
+      @title = "Registro"
       render 'new'
     end
   end
 
   def edit
-    @title = "Edit user"
+    @title = "Modificar Usuario"
   end
 
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      flash[:success] = "Profile updated."
+      flash[:success] = "Perfil actualizado."
       redirect_to @user
     else
-      @title = "Edit user"
+      @title = "Modiciar Usuario"
       render 'edit'
     end
   end
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
+    flash[:success] = "Usuario eliminado."
     redirect_to users_path
   end
 
   def following
-    @title = "Following"
+    @title = "Siguiendo"
     @user = User.find(params[:id])
     @users = @user.following.paginate(:page => params[:page])
     render 'show_follow'
   end
 
   def followers
-    @title = "Followers"
+    @title = "Seguidores"
     @user = User.find(params[:id])
     @users = @user.followers.paginate(:page => params[:page])
     render 'show_follow'

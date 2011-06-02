@@ -33,7 +33,7 @@ describe UsersController do
 
       it "should have the right title" do
         get :index
-        response.should have_selector("title", :content => "All users")
+        response.should have_selector("title", :content => "Todos los Usuarios")
       end
 
       it "should have an element for each user" do
@@ -53,11 +53,11 @@ describe UsersController do
       it "should paginate users" do
         get :index
         response.should have_selector("div.pagination")
-        response.should have_selector("span.disabled", :content => "Previous")
+        response.should have_selector("span.disabled", :content => "Anterior")
         response.should have_selector("a", :href => "/users?page=2",
                                            :content => "2")
         response.should have_selector("a", :href => "/users?page=2",
-                                           :content => "Next")
+                                           :content => "Siguiente")
       end
     end
   end
@@ -112,7 +112,7 @@ describe UsersController do
     
     it "should have the right title" do
       get 'new'
-      response.should have_selector("title", :content => "Sign up")
+      response.should have_selector("title", :content => "Inicio sesion")
     end
 
     it "should have a name field" do
@@ -145,7 +145,7 @@ describe UsersController do
 
       it "should have the right title" do
         post :create, :user => @attr
-        response.should have_selector("title", :content => "Sign up")
+        response.should have_selector("title", :content => "Inicio sesion")
       end
 
       it "should render the 'new' page" do
@@ -198,14 +198,14 @@ describe UsersController do
 
     it "should have the right title" do
       get :edit, :id => @user
-      response.should have_selector("title", :content => "Edit user")
+      response.should have_selector("title", :content => "Modificar usuario")
     end
 
     it "should have a link to change the Gravatar" do
       get :edit, :id => @user
       gravatar_url = "http://gravatar.com/emails"
       response.should have_selector("a", :href => gravatar_url,
-                                         :content => "change")
+                                         :content => "cambiar")
     end
   end
 
@@ -230,7 +230,7 @@ describe UsersController do
 
       it "should have the right title" do
         put :update, :id => @user, :user => @attr
-        response.should have_selector("title", :content => "Edit user")
+        response.should have_selector("title", :content => "Modificar usuario")
       end
     end
 

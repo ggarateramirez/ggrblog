@@ -104,6 +104,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   gravatar_image_tag
+  mail
   rails (= 3.0.7)
   rspec
   rspec-rails
