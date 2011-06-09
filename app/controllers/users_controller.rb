@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     if @user.save
       UserMailer.registration_confirmation(@user).deliver
       sign_in @user
-      flash[:success] = "Bienvenido a la GgrAplication!"
+      flash[:success] = "Bienvenido a granPa.com!"
       redirect_to @user
     else
       @title = "Registro"

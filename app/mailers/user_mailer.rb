@@ -3,8 +3,8 @@ class UserMailer < ActionMailer::Base
   
   def registration_confirmation(user)
     @user = user
-    attachments["rails.png"] = File.read("#{Rails.root}/public/images/rails.png")
-    mail(:to => "#{user.name} <#{user.email}>", :subject => "Registro en GgrAplication")
+    attachments["granpa.png"] = File.read("#{Rails.root}/public/images/granpa.png")
+    mail(:to => "#{user.name} <#{user.email}>", :subject => "Registro en granPa.com")
   end
 end
 
