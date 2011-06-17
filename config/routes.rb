@@ -1,5 +1,9 @@
 Ggrblog::Application.routes.draw do
 
+  resources :provincias
+
+  resources :tipousers
+
   get "microposts/create"
 
   get "microposts/destroy"

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @provincia.name %>
+</p>
+<p>
+  <b>NameRoute:</b>
+  <%= @provincia.nameroute %>
+</p>
+
+
+<%= link_to 'Edit', edit_provincia_path(@provincia) %> |
+<%= link_to 'Back', provincias_path %> |
+<%= link_to 'New Provincia', new_provincia_path %>
