@@ -6,6 +6,7 @@ gem 'rake', '0.8.7'
 gem 'gravatar_image_tag'
 gem 'will_paginate', '3.0.pre2'
 gem 'mail'
+gem 'heroku', '2.1.0'
 #gem 'rmagick'
 #gem 'mini_magick'
 
